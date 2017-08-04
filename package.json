@@ -1,0 +1,20 @@
+{
+  "name": "Free to Read",
+  "version": ,
+  "description": ,
+  "author": ,
+  "license": ,
+  "private": ,
+  "scripts":  {
+    "start": "npm start"
+  },
+  "dependencies": {
+    "angularJS": ,
+    "node express": ,
+    "mongoDB": ,
+    "mongoose":
+  },
+  "devDependencies": {
+
+  }
+}

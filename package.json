@@ -1,20 +1,29 @@
 {
-  "name": "Free to Read",
-  "version": ,
-  "description": ,
-  "author": ,
-  "license": ,
-  "private": ,
-  "scripts":  {
-    "start": "npm start"
+  "name": "free-to-read",
+  "version": "1.0.0",
+  "description": "a reading list app",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZimChristine/Free-to-Read.git"
+  },
+  "keywords": [
+    "free",
+    "read",
+    "list",
+    "book",
+    "wish"
+  ],
+  "author": "Christine O. Zimmerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZimChristine/Free-to-Read/issues"
+  },
+  "homepage": "https://github.com/ZimChristine/Free-to-Read#readme",
   "dependencies": {
-    "angularJS": ,
-    "node express": ,
-    "mongoDB": ,
-    "mongoose":
-  },
-  "devDependencies": {
-
+    "express": "^4.15.3"
   }
 }

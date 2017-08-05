@@ -24,16 +24,28 @@ db.once('open', () => {
   console.log('Mongo working!');
 });
 
-// db.then((db) => {
+var bookSchema = mongoose.Schema({
+  title: String,
+  author: String,
+  dateRead: Number
+});
 
-// });
+var Book = mongoose.model('Book', bookSchema);
 
-// app.get('/', function(request, response) {
-//   // render index.html page
-//   //response.sendStatus(200);
-//   response.sendFile(path.join(__dirname, 'client/index.html'));
-// })
+var narnia = new Book({title: 'Narnia', author: 'CS Lewis'});
+console.log(narnia.title, narnia.author);
 
 app.listen(port, ip, function() {
   console.log('listening on: ', ip, ' port: ', port);
 });
+
+// create get and post endpoints
+app.get('/list', (req, res) => {
+  Book.find().then((results) => {
+    res.status(200).send(results);
+  })
+  .catch((err) => {
+    console.log('Oops! Error: ', err);
+  })
+})
+//app.post()

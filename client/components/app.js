@@ -1,15 +1,15 @@
 angular.module('reading') //do I need to initialize with [] as second argument here?
 
-  .controller('AppCtrl', () => {
+  .controller('BookCtrl', () => {
     this.titleList = [];
 
     this.addTitle = () => {
-      this.titleList.push(this.newBook);
-      this.newBook = '';
+      this.titleList.push(this.newTitle);
+      this.newTitle = '';
     }
   })
-  .component('app', {
-    //templateUrl: '../templates/app.html',
+  .component('books', {
+    templateUrl: '../templates/app.html',
     controller: 'AppCtrl'
   });
 

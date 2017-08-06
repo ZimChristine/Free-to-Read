@@ -26,6 +26,7 @@
   "homepage": "https://github.com/ZimChristine/Free-to-Read#readme",
   "dependencies": {
     "angular": "^1.6.5",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3"
   }
 }

@@ -1,9 +1,15 @@
 <div>
-  <ul>
-    <li
-      ng-click=""
-      ng-repeat="title in $ctrl.titles"
-    > {{title}}
-    </li>
-  </ul>
+  <h2>I Can Has Books</h2>
+  <h4>add a title to get started</h4>
+  <input
+    type="text"
+    ng-model="$ctrl.input"
+  />
+  <button ng-click="$ctrl.addTitle()">
+    add title
+  </button>
+  <hr/>
+  <title-list
+    titles="$ctrl.titleList"
+  />
 </div>
